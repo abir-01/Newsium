@@ -2,7 +2,7 @@
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import NewsItem from "./components/NewsItem";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom"
 
 
 export default function App() {
