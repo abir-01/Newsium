@@ -25,7 +25,7 @@ export default function App() {
           <Route exact path='/Entertainment' element={<News category={'Entertainment'} />} />
         </Routes> */}
 
-      </Router>
+      {/* </Router> */}
 
 
     </>
