@@ -12,9 +12,9 @@ export default function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route exact path='/' element={<News category={'general'} />} />
           <Route exact path='/Heath' element={<News category={'Heath'} />} />
           <Route exact path='/Sports' element={<News category={'Sports'} />} />
@@ -25,7 +25,7 @@ export default function App() {
           <Route exact path='/Entertainment' element={<News category={'Entertainment'} />} />
         </Routes>
 
-      </Router>
+      </Router> */}
 
 
     </>
