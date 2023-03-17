@@ -2,7 +2,7 @@
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import NewsItem from "./components/NewsItem";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 
 
 export default function App() {
@@ -12,10 +12,9 @@ export default function App() {
 
   return (
     <>
-      {/* <Router> */}
-      <Navbar />
-      <News category={'general'} />
-        {/* <Routes>
+      <Router>
+        <Navbar />
+        <Routes>
           <Route exact path='/' element={<News category={'general'} />} />
           <Route exact path='/Heath' element={<News category={'Heath'} />} />
           <Route exact path='/Sports' element={<News category={'Sports'} />} />
@@ -24,9 +23,9 @@ export default function App() {
           <Route exact path='/Technology' element={<News category={'Technology'} />} />
           <Route exact path='/General' element={<News category={'General'} />} />
           <Route exact path='/Entertainment' element={<News category={'Entertainment'} />} />
-        </Routes> */}
+        </Routes>
 
-      {/* </Router> */}
+      </Router>
 
 
     </>

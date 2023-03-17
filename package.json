@@ -1,6 +1,5 @@
 {
-  "homepage": "https://abir-01.github.io/Newsium/#",
-  "name": "newsium",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {

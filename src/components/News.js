@@ -9,27 +9,23 @@ const News = (props) => {
     const [count, setcount] = useState(0)
     const [isLoading, setisLoading] = useState(true)
     // const [term, setterm] = useState('general')
-    // const [c, setc] = useState(0)
+    const [c, setc] = useState(0)
 
     useEffect(() => {
-        // console.log(props.category);
+        console.log(props.category);
         setisLoading(true);
-        fetch(`https://newsapi.org/v2/everything?q=${props.category}&language=en&pageSize=100&apiKey=bacf770e73964c8ca779e8836e49fd27`)
+        fetch(`https://newsapi.org/v2/everything?q=${props.category}&language=en&pageSize=100&apiKey=1499e0e06ab841a0ab5c8f7b8872be45`)
             .then(res => res.json())
             .then(data => {
-                setnewsi(data.articles)
-                setisLoading(false)
+                // console.log(data),
                 setcount(data.totalResults)
+                    setnewsi(data.articles)
+                setisLoading(false);
             })
             .catch(err => console.log(err));
-        
-       
 
 
     }, [props.category])
-
-
-    
 
 
 

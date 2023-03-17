@@ -200,4 +200,7 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
+
+ {/* "homepage": "https://abir-01.github.io/Newsium", */}
+ {/* "name": "newsium", */}
