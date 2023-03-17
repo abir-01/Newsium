@@ -13,7 +13,8 @@ export default function App() {
   return (
     <>
       {/* <Router> */}
-        <Navbar />
+      <Navbar />
+      <News category={'general'} />
         {/* <Routes>
           <Route exact path='/' element={<News category={'general'} />} />
           <Route exact path='/Heath' element={<News category={'Heath'} />} />
