@@ -9,7 +9,7 @@ const NewsItem = ({ news }) => {
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                     <img
                         className="rounded-t-lg object-cover"
-                        src={news.urlToImage ? news.urlToImage : 'https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg'}
+                        src={news.urlToImage!==null ? news.urlToImage : 'https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg'}
                         alt="No image" />
                 </a>
                 <div className="p-6">

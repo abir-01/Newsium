@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import NewsItem from "./components/NewsItem";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import Footer from "./components/Footer";
 
 
 export default function App() {
@@ -73,6 +74,7 @@ export default function App() {
 
 
         </Routes>
+        
 
       </Router>
 
