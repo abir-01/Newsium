@@ -3,9 +3,9 @@ import React from 'react'
 const NewsItem = ({ news }) => {
     // console.log(news);
     return (
-        <div className="flex justify-center mx-auto my-6">
+        <div className="flex justify-center mx-auto my-6 ">
             <div
-                className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
+                className="block max-w-xs rounded-lg bg-white shadow-lg dark:bg-neutral-700 transform  hover: transition duration-500 hover:scale-110">
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                     <img
                         className="rounded-t-lg object-cover"
@@ -17,24 +17,24 @@ const NewsItem = ({ news }) => {
                         className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                         Title : {news.title}
                     </h5>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        Description : {news.description.length > 250 ?
+                    <p className="mb-4 text-m text-neutral-600 dark:text-neutral-200">
+                        Description : {news.description !==null ?
                             `${news.description.substring(0, 250)}...` : news.description
                         }
 
 
 
                     </p>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        Author : {news.author}
+                    <p className="mb-2 text-sm text-neutral-600 dark:text-neutral-200">
+                        Author : {news.author? news.author:'Anonymous'}
 
                     </p>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        Published At : {news.publishedAt}
+                    <p className="mb-2 text-sm text-neutral-600 dark:text-neutral-200">
+                        Published At : {news.publishedAt? news.publishedAt:'No data available'}
 
                     </p>
-                    <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                        Source : {news.source.name}
+                    <p className="mb-4 text-sm text-neutral-600 dark:text-neutral-200">
+                        Source : {news.source.name? news.source.name:'Unknown'}
 
                     </p>
 
