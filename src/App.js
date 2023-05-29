@@ -1,31 +1,15 @@
-
 import Navbar from "./components/Navbar";
 import News from "./components/News";
-import NewsItem from "./components/NewsItem";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 
 export default function App() {
-
-
-
 
   return (
     <>
       <Router>
         <Navbar />
         <Routes>
-          {/* <Route exact path='/' element={<News category={'general'} />} />
-          <Route exact path='/Health/' element={<News category={'health'} />} />
-          <Route exact path='/Sports/' element={<News category={'sports'} />} />
-          <Route exact path='/Science/' element={<News category={'science'} />} />
-          <Route exact path='/Business/' element={<News category={'business'} />} />
-          <Route exact path='/Technology/' element={<News category={'technology'} />} />
-          <Route exact path='/General/' element={<News category={'general'} />} />
-          <Route exact path='/Entertainment/' element={<News category={'entertainment'} />} /> */}
-
-
           <Route exact path='/' element={<News language={'en'} category={'general'} country={'in'} />} />
           <Route exact path='/in/' element={<News language={'en'} category={'general'} country={'in'} />} />
           <Route exact path='/in/Health/' element={<News language={'en'} category={'health'}  country={'in'}/>} />

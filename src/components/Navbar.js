@@ -1,15 +1,9 @@
 import React from 'react'
-import News from './News'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import DarkModeToggle from "react-dark-mode-toggle";
 import image from '../assets/2644746.png'
 
 const Navbar = () => {
-
-    const [isDarkMode, setIsDarkMode] = useState(() => false);
-
-    const [term, setterm] = useState('general');
     const [country, setcountry] = useState('in/')
 
     return (
@@ -130,6 +124,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
- {/* "homepage": "https://abir-01.github.io/Newsium", */}
- {/* "name": "newsium", */}

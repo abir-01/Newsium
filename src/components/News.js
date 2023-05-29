@@ -5,6 +5,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Spinner from './Spinner';
 import Footer from './Footer';
 
+
 const News = (props) => {
     const [newsi, setnewsi] = useState([])
     const [count, setcount] = useState(0)
@@ -73,9 +74,9 @@ const News = (props) => {
                     
                          
                         <div className="flex flex-row flex-wrap justify-center align-center container py-8 my-10 mx-auto">
-                            {newsi.map((news, i) => (
+                            {newsi.map((news) => (
                                 // console.log(news),
-                                < NewsItem news={news} keys={i} />
+                                < NewsItem news={news} key={news.title} />
 
 
                             ))

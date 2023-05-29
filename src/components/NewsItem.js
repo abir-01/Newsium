@@ -1,4 +1,5 @@
 import React from 'react'
+import newsimage from '../assets/newsimage.jpg'
 
 const NewsItem = ({ news }) => {
     // console.log(news);
@@ -9,8 +10,9 @@ const NewsItem = ({ news }) => {
                 <a href="#!" data-te-ripple-init data-te-ripple-color="light">
                     <img
                         className="rounded-t-lg object-cover"
-                        src={news.urlToImage!==null ? news.urlToImage : 'https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg'}
-                        alt="No image" />
+                        alt="No image"
+                        src={news.urlToImage!==null ? news.urlToImage : newsimage} 
+                         />
                 </a>
                 <div className="p-6">
                     <h5
@@ -33,12 +35,12 @@ const NewsItem = ({ news }) => {
                         Published At : {news.publishedAt? news.publishedAt:'No data available'}
 
                     </p>
-                    <p className="mb-4 text-sm text-neutral-600 dark:text-neutral-200">
+                    <p className="mb-4 text-sm text-neutral-600 dark:text-neutral-200 pb-4">
                         Source : {news.source.name? news.source.name:'Unknown'}
 
                     </p>
 
-                    <a href={news.url} target='_blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read more</a>
+                    <a href={news.url} target='blank' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 absolute bottom-0">Read more</a>
 
                 </div>
             </div>
